@@ -36,7 +36,7 @@ All documentation in this repository is covered by a
 All software in this repository is covered by the MIT license (see `LICENSE`).
 
 ## Versions
-Each version (release) is assigned a new DOI. These are listed below:
+Each version (release) is assigned a new DOI. These are listed here:
 
 * v1.0: Initial version.
 
