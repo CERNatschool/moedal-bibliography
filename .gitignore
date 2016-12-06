@@ -1,0 +1,14 @@
+# LaTeX
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+
+# Old stuff
+old/
+
+# The generated summary tables (should be recreated)
+autotable.tex

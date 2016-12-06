@@ -1,0 +1,159 @@
+\documentclass[12pt,a4paper]{iopart}
+
+% Document information
+\newcommand{\DRN}{CAS-PUB-MDL-000001}
+\newcommand{\thisversion}{1.0}
+
+% Author information
+\input{common/authors/twhyntie.tex}
+
+% Packages and settings for CERN@school document formatting
+\input{common/tools/CERNatschool-packages.tex}
+
+% CERN@school macros and definitions
+\input{common/tools/defs.tex}
+
+% Journal short-cuts.
+\input{journals}
+
+\begin{document}
+
+%
+% Title
+%
+% The CERN@school logo
+\input{common/tools/logoheader.tex}
+
+%\title{\titlefont %
+\title{%
+  The CERN@school Programme: \\
+  MoEDAL bibliography
+}
+% 
+% Author information
+\author{\theauthorinit$^{1, \, 2}$}
+%
+\address{$^1$\theauthoraddressA}
+\address{$^2$\theauthoraddressB}
+\ead{\mailto{\theauthoremail}}
+
+%-----------------------------------------------------------------------------
+% Abstract
+\begin{abstract}
+This document presents a bibliography of publications relating
+directly or indirectly to the
+Monopole and Exotics Detector at the LHC (MoEDAL).
+%
+It is intended to serve as a reference for members of the 
+MoEDAL Collaboration,
+students involved in research activities connected to MoEDAL,
+and indeed anyone with an interest in the latest
+searches for Dirac's hypothesised magnetic monopole at
+CERN's Large Hadron Collider.
+%
+Both quick reference summary tables,
+indexed by BibTeX citation code (as used in the
+accompanying BibTeX file),
+and a full bibliography in the BibTeX \texttt{unsrt} style
+are provided.
+%
+Suggestions, comments, or additions from all
+communities are welcome;
+please contact the corresponding author
+for more information.
+
+\end{abstract}
+%-----------------------------------------------------------------------------
+%
+
+% Add a table of contents.
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+% Add the license information (CC-BY-4).
+\input{common/tools/licenseCCBY4}
+
+\newpage
+
+%
+% Introduction
+%
+\input{intro}
+
+\newpage
+
+%
+% The summary tables.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary tables}
+\label{sec:summaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The following tables contain the LaTeX citation code,
+Digital Object Identifier (DOI) -- or URL where no DOI is available --
+brief notes, year of publication,
+and
+number in the actual bibliography at the end of this document,
+for each publication.
+%
+Publications of particular importance are denoted with an
+asterisk in the notes column.
+%
+
+\newpage
+
+\begin{landscape}
+%
+% The table produced by make_paper_summary_tables.py
+\input{autotable}
+%
+\end{landscape}
+
+\newpage
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{References}
+\bibliographystyle{unsrt.bst}
+\bibliography{MoEDAL}
+%
+%------------------------------------------------------------------------------
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+\label{sec:ack}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The author would like to thank Professor Jim Pinfold,
+spokesperson for the MoEDAL Collaboration,
+for providing the original BibTeX file and many fruitful conversations.
+This work was supported by the UK Science and Technology Facilities Council
+(STFC) via grant ST/N00101X/1.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Version History}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%______________________________________________________________________________
+\begin{table}[h]
+\caption{\label{tab:version}Version history.}
+\lineup
+\begin{indented}
+\item[]\begin{tabular}{@{}clc}
+\br
+\centre{1}{$\quad$Version    $\quad$} & 
+\centre{1}{$\quad$Description$\quad$} &
+\centre{1}{$\quad$Author     $\quad$} \\
+\mr
+1.0 & Initial version. & TW \\
+\br
+\end{tabular}
+\end{indented}
+\end{table}
+%______________________________________________________________________________
+
+\end{document}
