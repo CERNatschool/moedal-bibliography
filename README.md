@@ -35,6 +35,10 @@ All documentation in this repository is covered by a
 
 All software in this repository is covered by the MIT license (see `LICENSE`).
 
+## Versions
+* v1.0: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.193037.svg)](https://doi.org/10.5281/zenodo.193037)
+
+
 
 ## Useful links
 
