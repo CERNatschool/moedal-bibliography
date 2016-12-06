@@ -123,7 +123,7 @@ if __name__ == "__main__":
     table_number = 0
 
     # Loop through the papers in reverse chronological order.
-    for i, paper in enumerate(sorted(papers), reverse=False):
+    for i, paper in enumerate(sorted(papers, reverse=False)):
 
         if ((i) % num_rows == 0) or ():
             table_number += 1
